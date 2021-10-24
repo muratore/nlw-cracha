@@ -11,6 +11,7 @@ html, body{
 }
 
 body{
+  
   display: grid;
   place-items: center;
 }
@@ -29,11 +30,12 @@ margin-top: -4px;
 }
 
 main{
-  background: url(images/background.png);
-  background-position: 50% 50%;
+  background: url(images/background.png) no-repeat center/cover;
+  /* background-position: 50% 50%; */
   background-size: cover;
-  width: 375px;
-  height: 812px;
+  width: 100vw;
+  /* min-height: 812px; */
+  height: 100vh;
   --black: hsl(240,6,13);
   --gray: hsl(240,9%,89%);
 }
@@ -95,6 +97,7 @@ ul{
   body{
     background-image: url(images/backgroundDesktop.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     place-items:unset;
   }
@@ -106,7 +109,8 @@ ul{
     background-size: cover;
     background-position: 0 center;
     width: 358px;
-    height: 540px;
+    max-height: 540px;
+    
     margin: 8.75rem auto;
   }
   
